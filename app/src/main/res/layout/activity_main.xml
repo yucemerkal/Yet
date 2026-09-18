@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#1E1E1E"
+    android:padding="8dp">
+
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text=""
+        android:textColor="#888888"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:minLines="1" />
+
+    <TextView
+        android:id="@+id/tvDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="end|bottom"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="56sp"
+        android:padding="8dp"
+        android:maxLines="2"
+        android:ellipsize="start" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="4"
+        android:rowCount="5">
+
+        <Button android:id="@+id/btnClear" android:text="C" style="@style/CalcButtonFunction"/>
+        <Button android:id="@+id/btnSign" android:text="+/-" style="@style/CalcButtonFunction"/>
+        <Button android:id="@+id/btnPercent" android:text="%" style="@style/CalcButtonFunction"/>
+        <Button android:id="@+id/btnDivide" android:text="÷" style="@style/CalcButtonOperator"/>
+
+        <Button android:id="@+id/btn7" android:text="7" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btn8" android:text="8" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btn9" android:text="9" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btnMultiply" android:text="×" style="@style/CalcButtonOperator"/>
+
+        <Button android:id="@+id/btn4" android:text="4" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btn5" android:text="5" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btn6" android:text="6" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btnMinus" android:text="−" style="@style/CalcButtonOperator"/>
+
+        <Button android:id="@+id/btn1" android:text="1" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btn2" android:text="2" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btn3" android:text="3" style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btnPlus" android:text="+" style="@style/CalcButtonOperator"/>
+
+        <Button android:id="@+id/btn0" android:text="0" style="@style/CalcButtonNumberWide"/>
+        <Button android:id="@+id/btnDot" android:text="." style="@style/CalcButtonNumber"/>
+        <Button android:id="@+id/btnEquals" android:text="=" style="@style/CalcButtonOperator"/>
+
+    </GridLayout>
+
+</LinearLayout>
